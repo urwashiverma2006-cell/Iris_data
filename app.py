@@ -48,6 +48,6 @@ def predict():
 	except Exception as e:
 		return jsonify(error=str(e)),500
 
-if__name__=="__main__":
+if __name__ == "__main__":
 	#Local dev oly; Render will run with Gunicorn(see start command below)
-	app.run(host="0.0.0.0",port=int(os.environ.get(PORT,8000))) 
+	app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))  
